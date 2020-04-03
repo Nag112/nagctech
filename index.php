@@ -47,7 +47,7 @@
 								  <span
 								     class="txt-rotate"
 								     data-period="2000"
-								     data-rotate='[ "Developer.", "Programmer.", "Photographer.", "Breather.", "Cooker." ]'></span>
+								     data-rotate='[ "Developer.", "Programmer.", "Photographer.", "Engineer." ]'></span>
 								</h2>
 							</div>
             </div>
@@ -76,7 +76,7 @@
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>I am what i</p>
+		            <p>A UG student from NIT Goa</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>Nagacharan.K</span></li>
 		            	<li class="d-flex"><span>Date of birth:</span> <span>December 11, 1998</span></li>
