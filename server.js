@@ -7,15 +7,12 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.static('public'));
 app.listen(5501);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 app.get('/mail',(req,res)=>{
-    if(req.headers.token == 'GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU') 
+    if(req.headers.token == "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU") 
     {
-        const msg = {
-            to: 'raju11297@gmail.com',
-            from: 'no-reply@soungster.com',
-            subject: req.body.subject,
-            html: `<p>${req.body.message}</p>`
-          };
+        var msg = req.body;
+          msg.from = 'no-reply@soungster.com'
           sgMail.send(msg).then((response)=>{
             res.status(200).send({status:true});
           }).catch((err)=>{
@@ -23,7 +20,7 @@ app.get('/mail',(req,res)=>{
     }
    else
    {
-    res.status(401).send({status:false,error:'unauthorizied'});
+    res.status(401).send({status:false,error:'invalid access token'});
    }
 });
 app.get('/send_mail',(req,res)=>{
