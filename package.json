@@ -1,0 +1,24 @@
+{
+  "name": "nagctech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nag112/nagctech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nag112/nagctech/issues"
+  },
+  "homepage": "https://github.com/Nag112/nagctech#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "@sendgrid/mail": "^7.2.0",
+    "dotenv": "^8.2.0"
+  }
+}
