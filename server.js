@@ -7,6 +7,8 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.static('public'));
 app.listen(5501);
+const cors = require('cors');
+app.use(cors());
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 app.get('/mail',(req,res)=>{
     if(req.headers.token == "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU") 
